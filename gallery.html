@@ -30,6 +30,23 @@
     <footer class="footer">
       <div class="mb-0 d-block mt-4 small text-center">© Shin.Sakya, Photo credits: Yuiii Chang </div>
     </footer>
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+            xfbml: true,
+            version: 'v9.0'
+        });
+      };
+      (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
+          fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="fb-customerchat" attribution="setup_tool" page_id="1463005153984803" theme_color="#0A7CFF" çlogged_in_greeting="有什麼我們能協助您的呢？" logged_out_greeting="有什麼我們能協助您的呢？"></div>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/all.js"></script>
